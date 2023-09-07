@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
 	<link rel="stylesheet" href="@@style?_v=20230907171501">
-	<title>Sign in</title>
+	<title>Sign up</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="sign-header">
+   <div class="wrapper">
+      <header class="sign-header">
    <div class="sign-header__container">
       <div class="sign-header__logo">
          <a href="sign-in.html"><img src="images/logo.svg" alt="logo"></a>
@@ -23,28 +23,20 @@
       
    </div>
 </header>
-    <main class="sign-in page">
-      <section class="sign-in page__sign-in">
-        <div class="sign-in__container">
-          <div class="sign-in__content">
-            <h1 class="sign-in__title title">Sign in with email</h1>
-            <p class="text sign-in__text">Please enter your e-mail and password:</p>
-            <form class="sign-in__form">
-              <div class="sign-in__email">
-                <input class="text inp sign-in__input" type="email" placeholder="Email">
-              </div>
-              <div class="sign-in__password">
-                <input class="text inp sign-in__input" type="password" placeholder="Password">
-                <button class="text sign-in__forgot">Forgot password?</button>
-              </div>
-              <button class="sign-in__btn">Sign in</button>
-            </form>
-            <div class="sign-line__row">
-   <hr class="sign-line__line">
-   <p class="sign-line__text">or sign in with...</p>
-   <hr class="sign-line__line">
+      <main class="sign-up page">
+         <section class="sign-up page__sign-up">
+            <div class="sign-up__container">
+               <div class="sign-up__content">
+                  <div class="sign-up__row">
+                     <button class="button sign-up__switch-btn act-btn">Regular customer</button>
+                     <button class="button sign-up__switch-btn">Wholesale customer</button>
+                  </div>
+                  <div class="sign-line__row">
+   <hr class="sign-line__line sign-up__line">
+   <p class="sign-up-line__text">Sign up with</p>
+   <hr class="sign-line__line sign-up__line">
 </div>
-            <div class="sign-btns">
+                  <div class="sign-btns">
    <div class="sign-btns__row">
       <button class="sign-btns__btns google"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <mask id="mask0_721_3363" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="5" width="22" height="22">
@@ -70,11 +62,31 @@
  </svg> Facebook</button>
    </div>
 </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="sign-footer">
+                  <div class="sign-up__item"> <div class="sign-line__row">
+   <hr class="sign-line__line sign-up-line">
+   <p class="sign-line__text sign-up-sub__text">or sign up using your email address...</p>
+   <hr class="sign-line__line sign-up-line">
+</div></div>
+                  
+                 
+                  <form class="sign-up__form">
+                     <input class="inp sign-up__input" type="email" placeholder="Email">
+                     <input class="inp sign-up__input" type="text" placeholder="First Name">
+                     <input class="inp sign-up__input" type="text" placeholder="Last Name">
+                     <input class="inp sign-up__input" type="password" placeholder="Password">
+                     <div class="inp sign-up__file">
+                        <label class="sign-up__label" for="inp-file">Upload</label>
+                        <input class="inp sign-up__input-file" type="file" id="inp-file" accept="application/pdf">
+                        <p class="sign-up__placeholder">Wholesale purchase permission</p>
+                     </div>
+                     <button class="button sign-up__btn">Create my account</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+
+      </main>
+      <footer class="sign-footer">
    <div class="sign-footer__container">
       <hr class="sign-footer__line">
       <div class="sign-footer__item">
@@ -83,8 +95,7 @@
       </div>
    </div>
 </footer>
-    
-
-</div></body>
+   </div>
+</body>
 
 </html>
