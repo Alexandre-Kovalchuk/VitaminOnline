@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
- <head>
+   <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="@@style?_v=20230909222811">
+	<link rel="stylesheet" href="css/sign-in.min.css?_v=20230912233919">
 	<title>Sign in</title>
 </head>
 
@@ -17,10 +17,10 @@
          <a href="sign-in.html"><img src="images/logo.svg" alt="logo"></a>
       </div>
       <div class="sign-header__account">
-         <a class="sign-header__link" href="index.html"> <img src="images/Back-arrow.svg" alt="arrow-back">Account</a>
+         <a class="sign-header__link" href="index.html"> 
+            <img src="images/Back-arrow.svg" alt="arrow-back">Account</a>
       </div>
-      <hr class="sign-header__line">
-      
+      <hr class="line sign-header__line">
    </div>
 </header>
     <main class="sign-in page">
@@ -31,18 +31,18 @@
             <p class="text sign-in__text">Please enter your e-mail and password:</p>
             <form class="sign-in__form">
               <div class="sign-in__email">
-                <input class="text inp sign-in__input" type="email" placeholder="Email">
+                <input class="text inp email" type="email" placeholder="Email">
               </div>
               <div class="sign-in__password">
-                <input class="text inp sign-in__input" type="password" placeholder="Password">
+                <input class="text inp password" type="password" placeholder="Password">
                 <button class="text sign-in__forgot">Forgot password?</button>
               </div>
-              <button class="sign-in__btn">Sign in</button>
+              <button type="submit" class="sign-in__btn" disabled="true">Sign in</button>
             </form>
-            <div class="sign-line__row">
-   <hr class="sign-line__line">
-   <p class="sign-line__text">or sign in with...</p>
-   <hr class="sign-line__line">
+            <div class="sign__row">
+   <hr class="line sign__row-line">
+   <p class="sign__row-text">or sign in with...</p>
+   <hr class="line sign__row-line">
 </div>
             <div class="sign-btns">
    <div class="sign-btns__row">
@@ -83,7 +83,7 @@
       </div>
    </div>
 </footer>
-    
+    <script src="js/signIn.min.js?_v=20230912233919"></script>
 
 </div></body>
 

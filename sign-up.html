@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="@@style?_v=20230909222811">
-	<title>Sign up</title>
+	<link rel="stylesheet" href="css/sign-up.min.css?_v=20230912233919">
+	<title>Sign in</title>
 </head>
 
 <body>
@@ -17,10 +17,10 @@
          <a href="sign-in.html"><img src="images/logo.svg" alt="logo"></a>
       </div>
       <div class="sign-header__account">
-         <a class="sign-header__link" href="index.html"> <img src="images/Back-arrow.svg" alt="arrow-back">Account</a>
+         <a class="sign-header__link" href="index.html"> 
+            <img src="images/Back-arrow.svg" alt="arrow-back">Account</a>
       </div>
-      <hr class="sign-header__line">
-      
+      <hr class="line sign-header__line">
    </div>
 </header>
       <main class="sign-up page">
@@ -31,11 +31,11 @@
                      <button class="button sign-up__switch-btn act-btn">Regular customer</button>
                      <button class="button sign-up__switch-btn">Wholesale customer</button>
                   </div>
-                  <div class="sign-line__row">
-   <hr class="sign-line__line sign-up__line">
-   <p class="sign-up-line__text">Sign up with</p>
-   <hr class="sign-line__line sign-up__line">
-</div>
+                  <div class="sign-up__subrow">
+                     <hr class="line sign-up__line">
+                     <p class="sign-up__text">Sign up with</p>
+                     <hr class="line sign-up__line">
+                  </div>
                   <div class="sign-btns">
    <div class="sign-btns__row">
       <button class="sign-btns__btns google"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -62,22 +62,21 @@
  </svg> Facebook</button>
    </div>
 </div>
-                  <div class="sign-up__item"> <div class="sign-line__row">
-   <hr class="sign-line__line sign-up-line">
-   <p class="sign-line__text sign-up-sub__text">or sign up using your email address...</p>
-   <hr class="sign-line__line sign-up-line">
-</div></div>
-                  <form class="sign-up__form">
-                     <input class="inp sign-up__input" type="email" placeholder="Email">
-                     <input class="inp sign-up__input" type="text" placeholder="First Name">
-                     <input class="inp sign-up__input" type="text" placeholder="Last Name">
-                     <input class="inp sign-up__input" type="password" placeholder="Password">
+                  <div class="sign-up__item">
+                     <hr class="line sign-up__line sign-up__subline">
+                     <p class="sign-up__text sign-up__subtext">or sign up using your email address...</p>
+                     <hr class="line sign-up__line sign-up__subline"> </div>
+                   <form class="sign-up__form">
+                     <input class="inp sign-up__input email" type="email" placeholder="Email">
+                     <input class="inp sign-up__input first-name" type="text" placeholder="First Name">
+                     <input class="inp sign-up__input last-name" type="text" placeholder="Last Name">
+                     <input class="inp sign-up__input password" type="password" placeholder="Password">
                      <div class="inp sign-up__file">
                         <label class="sign-up__label" for="inp-file">Upload</label>
                         <input class="inp sign-up__input-file" type="file" id="inp-file" accept="application/pdf">
                         <p class="sign-up__placeholder">Wholesale purchase permission</p>
                      </div>
-                     <button class="button sign-up__btn">Create my account</button>
+                     <button type="submit" class="button btn sign-up__btn">Create my account</button>
                   </form>
                </div>
             </div>
@@ -93,6 +92,7 @@
       </div>
    </div>
 </footer>
+      <script src="js/signUp.min.js?_v=20230912233919"></script>
    </div>
 </body>
 
