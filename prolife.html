@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/profile.min.css?_v=20230914004030">
+	<link rel="stylesheet" href="css/profile.min.css?_v=20230914170559">
 	<title>Profile</title>
 </head>
 
@@ -108,7 +108,7 @@
                   </nav>
                </aside>
                <div class="profile__content">
-                  <div class="account profile__account">
+                  <div class="hide account profile__account">
                      <div class="account__content">
                         <div class="account__row">
                            <h2 class="account__title title">Account Overview</h2>
@@ -198,7 +198,7 @@
                      </div>
 
                   </div>
-                  <div class="payment profile__payment">
+                  <div class="hide payment profile__payment">
                      <div class="payment__content">
                         <h2 class="account__title title">Payment methods</h2>
                         <div class="payment__card">
@@ -229,8 +229,23 @@
                      </div>
 
                   </div>
+                  <div class="hide password profile__password">
+                     <div class="password__content">
+                        <h2 class="account__title title">Change Password</h2>
+                        <form class="mw password__form">
+                           <label class="text account__form-label">Current Password</label>
+                           <input class="inp password__form-password" type="password">
+                           <label class="text account__form-label">New Password</label>
+                           <input class="inp password__form-password" type="password">
+                           <label class="text account__form-label">Confirm New Password</label>
+                           <input class="inp password__form-password" type="password">
+                        </form>
+                        <div class="password__btn">
+                           <button class="button account__form-btn">Save</button>
+                        </div>
+                     </div>
 
-
+                  </div>
                </div>
 
 
@@ -292,7 +307,7 @@
    </div>
 </footer>
    </div>
-   <script src="js/profile.min.js?_v=20230914004030"></script>
+   <script src="js/profile.min.js?_v=20230914170559"></script>
 </body>
 
 </html>
