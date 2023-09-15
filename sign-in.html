@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/sign-in.min.css?_v=20230915183206">
+	<link rel="stylesheet" href="css/sign-in.min.css?_v=20230915230616">
 	<title>Sign in</title>
 </head>
 
@@ -32,12 +32,15 @@
             <form class="sign-in__form">
               <div class="sign-in__email">
                 <input class="text inp email" type="email" placeholder="Email">
+                <span class="sign-in__error email-error"></span>
+                
               </div>
               <div class="sign-in__password">
                 <input class="text inp password" type="password" placeholder="Password">
                 <button class="text sign-in__forgot">Forgot password?</button>
+                <span class="sign-in__error password-error"></span>
               </div>
-              <button type="submit" class="sign-in__btn" disabled="true">Sign in</button>
+              <button type="submit" class="sign-in__btn submit">Sign in</button>
             </form>
             <div class="sign__row">
    <hr class="line sign__row-line">
@@ -83,8 +86,7 @@
       </div>
    </div>
 </footer>
-    
-    <script src="js/signIn.min.js?_v=20230915183206"></script>
+    <script src="js/signIn.min.js?_v=20230915230616"></script>
 
 </div></body>
 
