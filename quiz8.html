@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
- <head>
+    <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="@@style?_v=20230919004704">
-	<title>Квиз</title>
+	<link rel="stylesheet" href="css/quiz.min.css?_v=20230921160426">
+	<title>Quiz</title>
 </head>
 
 <body>
@@ -28,34 +28,40 @@
  </svg>
          </div>
       </div>
-      <div class="quiz-header__number text">
-         8/9
+      <div class="text quiz-header__number">
+         9/9
       </div>
    </div>
 </header>
    <main class="page">
       <section class="page-quiz quiz">
          <div class="quiz__container">
-            <div class="quiz__question quiz__question-8">
-               <h1 class="quiz__title title">Tell us what you want to focus on</h1>
+            <div class="quiz__question">
+               <h1 class="quiz__title title">What’s your email address?</h1>
             </div>
             <div class="quiz__answer">
-               <div class="quiz__column quiz__column-8">
-                  <button class="grig-btn quiz__column-btn" type="button">Weight managment</button>
-                  <button class="grig-btn quiz__column-btn" type="button">Stress relief</button>
-                  <button class="grig-btn quiz__column-btn" type="button">Immune boost</button>
-                  <button class="grig-btn quiz__column-btn" type="button">Need to solve a sprcific problem</button>
-                  <button class="grig-btn quiz__column-btn" type="button">I need a bassic kit for a daily intake</button>
-                  <button class="grig-btn quiz__column-btn" type="button">All in one</button>
-               </div>
-               <div class="quiz__answer-circle-8">
+               <form class="quiz__form" id="myForm">
+                  <label class="text quiz__form-label" for="firstName">Email</label>
+                  <input class="text email quiz__form-inp" id="firstName" name="firstName" type="email" placeholder="">
+                  <a class="quiz__form-link" href="personalPack.html" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.46376 15.6855L9.53674e-07 14.2405L6.07249 8.24606L0 2.25159L1.46376 0.806641L9 8.24606L1.46376 15.6855Z" fill="white"/>
+ </svg></a>
+                  <span class="email-error quiz__form-error"></span>
+               </form>
+
+               <div class="quiz__circle">
                   <svg xmlns="http://www.w3.org/2000/svg" width="156" height="156" viewBox="0 0 156 156" fill="none">
    <circle cx="78" cy="78" r="78" fill="#F7906E"/>
  </svg>
                </div>
-               <div class="quiz__answer-ellipse-8">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="171" height="171" viewBox="0 0 171 171" fill="none">
-   <path d="M142 9.8533e-06C142 78.4244 78.4244 142 -1.79237e-05 142" stroke="#F6906E" stroke-width="58"/>
+               <div class="quiz__ellipse">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="223" height="183" viewBox="0 0 223 183" fill="none">
+   <path d="M194 1.1993e-05C194 85.0519 124.996 154 39.8753 154L-2.0355e-05 154" stroke="#FFCA78" stroke-width="58"/>
+ </svg>
+               </div>
+               <div class="quiz__sub-ellipse">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="183" height="182" viewBox="0 0 183 182" fill="none">
+   <path d="M29 182C29 97.5004 97.9481 29 183 29" stroke="#FFCA78" stroke-width="58"/>
  </svg>
                </div>
             </div>
@@ -69,7 +75,7 @@
  </svg> Back</a>
 </div>
 </footer>
-   <script src="js/quiz.min.js?_v=20230919004704"></script>
+	<script src="js/quiz.min.js?_v=20230921160426"></script>
 </body>
 
 </html>
