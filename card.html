@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/card.min.css?_v=20230921160426">
+	<link rel="stylesheet" href="css/card.min.css?_v=20230927014458">
 	<title>Product card</title>
 </head>
 
@@ -76,7 +76,10 @@
         <a class="header__row-profile-link" href="sign-in.html"><img src="images/Profile.svg" alt="Profile"></a>
       </div>
       <div class="header__row-basket">
-        <a class="header__row-basket-link" href="#"><img src="images/basket.svg" alt="Basket"></a>
+        <a class="header__row-basket-link" href="#">
+          <img src="images/basket.svg" alt="Basket">
+          <span class="header__row-basket-circle"></span>
+        </a>
       </div>
       <div class="header__row-quiz">
         <a class="button header__row-quiz-link" href="quiz.html">Take the quiz</a>
@@ -84,6 +87,26 @@
     </div>
   </div>
 </header>
+      <div class="basket">
+   <div class="basket__row">
+      <h2 class="title basket__title">Cart</h2>
+      <div class="basket__close"><img src="../images/closeBasket.svg" alt="closeBasket"></div>
+   </div>
+   <div class="line basket__line"></div>
+   <div class="basket__content">
+      
+
+   </div>
+   <h3 class="text basket__not-product">Your cart is empty</h3>
+   <div class="basket__check">
+      <a class="button basket__link" href="#">Check Out</a>
+      <p class="button basket__circle">•</p>
+      <p class="button basket__picce"> $00.00</p>
+   </div>
+   <p class="text basket__info">Minimum order amount is $700</p>
+
+
+</div>
       <main class="page">
          <section class="card page-card">
             <div class="card__content">
@@ -91,7 +114,7 @@
                   <div class="card__ellipse">
                      <img src="images/cardEllipse.svg" alt="ellipse">
                   </div>
-                  <picture>
+                  <picture class="card__picture">
                      <source class="card__img-webp" srcset="" type="image/webp">
                      <img class="card__img" src="" alt="vitamin">
                   </picture>
@@ -111,16 +134,14 @@
                            <div class="info__sub-item">
                               <h2 class="text info__sub-title"></h2>
                               <p class="text info__sub-text"></p>
-
-
                            </div>
 
 
                         </div>
                         <div class="info__controls">
-                           <button class="info__decrem"><img src="images/minus.svg" alt="minus"></button>
+                           <button class="info__decrem" id="minusButton"><img src="images/minus.svg" alt="minus"></button>
                            <p class="title info__numbers">1</p>
-                           <button class="info__increm"><img src="images/plus.svg" alt="plus"></button>
+                           <button class="info__increm" id="plusButton"><img src="images/plus.svg" alt="plus"></button>
 
                         </div>
                      </div>
@@ -150,13 +171,11 @@
                         <hr class="line info__line">
                         <div class="info__param-sub-row">
                            <div class="info__param-block">
-                              <p class="text info__price-old"></p>
-                              <p class="text info__price"></p>
-                              <p class="text info__label"></p>
+                              
+                              
+                              
                            </div>
                            
-                 
-                           <button class="button info__add-btn">Add to cart</button>
                         </div>
 
 
@@ -250,40 +269,7 @@
          <section class="page-top-picks top-picks">
             <div class="top-picks__container">
                <h2 class="title top-picks__title">You may also like</h2>
-               <div class="personal__content">
-   <div class="personal__card">
-      <div class="personal__card-img">
-         <img class="personal__card-image" src="" alt="vitamin">
-      </div>
-      <p class="text personal__card-text"></p>
-      <h3 class="title personal__card-title"></h3>
-      <p class="text personal__card-price"></p>
-   </div>
-   <div class="personal__card">
-      <div class="personal__card-img">
-         <img class="personal__card-image" src="" alt="vitamin">
-      </div>
-      <p class="text personal__card-text"></p>
-      <h3 class="title personal__card-title"></h3>
-      <p class="text personal__card-price"></p>
-   </div>
-   <div class="personal__card">
-      <div class="personal__card-img">
-         <img class="personal__card-image" src="" alt="vitamin">
-      </div>
-      <p class="text personal__card-text"></p>
-      <h3 class="title personal__card-title"></h3>
-      <p class="text personal__card-price"></p>
-   </div>
-   <div class="personal__card">
-      <div class="personal__card-img">
-         <img class="personal__card-image" src="" alt="vitamin">
-      </div>
-      <p class="text personal__card-text"></p>
-      <h3 class="title personal__card-title"></h3>
-      <p class="text personal__card-price"></p>
-   </div>
-</div>
+               <div class="personal__content"></div>
             </div>
 
          </section>
@@ -344,7 +330,8 @@
    </div>
 </footer>
    </div>
-   <script src="js/card.min.js?_v=20230921160426"></script>
+   <script src="js/basket.min.js?_v=20230927014458"></script>
+   <script src="js/card.min.js?_v=20230927014458"></script>
 </body>
 
 </html>
