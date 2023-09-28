@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/main.min.css?_v=20230927014458">
+	<link rel="stylesheet" href="css/main.min.css?_v=20230928173832">
 	<title>Главная</title>
 </head>
 
@@ -78,15 +78,34 @@
       <div class="header__row-basket">
         <a class="header__row-basket-link" href="#">
           <img src="images/basket.svg" alt="Basket">
-          <span class="header__row-basket-circle"></span>
+          <span class="header__row-basket-circle" id="circle"></span>
         </a>
       </div>
       <div class="header__row-quiz">
         <a class="button header__row-quiz-link" href="quiz.html">Take the quiz</a>
       </div>
+      <p></p>
     </div>
   </div>
 </header>
+	<div class="basket">
+   <div class="basket__row">
+      <h2 class="title basket__title">Cart</h2>
+      <div class="basket__close"><img src="../images/closeBasket.svg" alt="closeBasket"></div>
+   </div>
+   <div class="line basket__line"></div>
+   <div class="basket__content">
+      
+
+   </div>
+   <h3 class="text basket__not-product">Your cart is empty</h3>
+   <div class="basket__check">
+      <button class="button basket__price-btn"></button>
+   </div>
+
+
+
+</div>
 	 <main class="page">
 		<section class="page-vitamin vitamin">
 			<div class="vitamin__content">
@@ -424,7 +443,8 @@
 
    </div>
 </footer>
-	<script src="js/index.min.js?_v=20230927014458"></script>
+	<script src="js/card.min.js?_v=20230928173832"></script>
+	<script src="js/index.min.js?_v=20230928173832"></script>
 	</div>
 </body>
 

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/product.min.css?_v=20230927014458">
+	<link rel="stylesheet" href="css/product.min.css?_v=20230928173832">
 	<title>Product</title>
 </head>
 
@@ -78,15 +78,34 @@
       <div class="header__row-basket">
         <a class="header__row-basket-link" href="#">
           <img src="images/basket.svg" alt="Basket">
-          <span class="header__row-basket-circle"></span>
+          <span class="header__row-basket-circle" id="circle"></span>
         </a>
       </div>
       <div class="header__row-quiz">
         <a class="button header__row-quiz-link" href="quiz.html">Take the quiz</a>
       </div>
+      <p></p>
     </div>
   </div>
 </header>
+      <div class="basket">
+   <div class="basket__row">
+      <h2 class="title basket__title">Cart</h2>
+      <div class="basket__close"><img src="../images/closeBasket.svg" alt="closeBasket"></div>
+   </div>
+   <div class="line basket__line"></div>
+   <div class="basket__content">
+      
+
+   </div>
+   <h3 class="text basket__not-product">Your cart is empty</h3>
+   <div class="basket__check">
+      <button class="button basket__price-btn"></button>
+   </div>
+
+
+
+</div>
       <main class="page">
          <section class="page-product product">
             <div class="product__slider">
@@ -242,15 +261,15 @@
                   <hr class="line card__menu-line">
                   <nav class="card__menu-body">
                      <ul class="card__menu-list">
-                        <li class="text card__menu-item">All categories</li>
-                        <li class="text card__menu-item">Vitamins & Dietary Supplements</li>
-                        <li class="text card__menu-item">Weight Loss</li>
-                        <li class="text card__menu-item">Minerals</li>
-                        <li class="text card__menu-item">Antioxidants</li>
-                        <li class="text card__menu-item">Probiotics</li>
-                        <li class="text card__menu-item">Pain Relief</li>
-                        <li class="text card__menu-item">Prenatal Vitamins</li>
-                        <li class="text card__menu-item">Sale%</li>
+                        <li data-filter="all" class="text card__menu-item">All categories</li>
+                        <li data-filter="vitamins" class="text card__menu-item">Vitamins & Dietary Supplements</li>
+                        <li data-filter="weight" class="text card__menu-item">Weight Loss</li>
+                        <li data-filter="minerals" class="text card__menu-item">Minerals</li>
+                        <li data-filter="antioxidants" class="text card__menu-item">Antioxidants</li>
+                        <li data-filter="probiotics" class="text card__menu-item">Probiotics</li>
+                        <li data-filter="pain" class="text card__menu-item">Pain Relief</li>
+                        <li data-filter="prenatal" class="text card__menu-item">Prenatal Vitamins</li>
+                        <li data-filter="sale" class="text card__menu-item">Sale%</li>
                      </ul>
                   </nav>
                </aside>
@@ -394,17 +413,7 @@
    </div>
 </footer>
    </div>
-   <script src="js/product.min.js?_v=20230927014458"></script>
+   <script src="js/product.min.js?_v=20230928173832"></script>
 </body>
 
 </html>
-
-
-<div data-id="2" class="catalog__card vitamins">
-   <div class="catalog__card-img">
-      <img class="catalog__card-images" src="" alt="vitamin">
-   </div>
-   <p class="text catalog__card-text"></p>
-   <h3 class="title catalog__card-title"></h3>
-   <p class="text catalog__card-price"></p>
-</div>

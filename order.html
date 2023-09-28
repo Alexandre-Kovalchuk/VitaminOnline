@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/order.min.css?_v=20230927014458">
+	<link rel="stylesheet" href="css/order.min.css?_v=20230928173832">
 	<title>Orders</title>
 </head>
 
@@ -78,31 +78,48 @@
       <div class="header__row-basket">
         <a class="header__row-basket-link" href="#">
           <img src="images/basket.svg" alt="Basket">
-          <span class="header__row-basket-circle"></span>
+          <span class="header__row-basket-circle" id="circle"></span>
         </a>
       </div>
       <div class="header__row-quiz">
         <a class="button header__row-quiz-link" href="quiz.html">Take the quiz</a>
       </div>
+      <p></p>
     </div>
   </div>
 </header>
+      <div class="basket">
+   <div class="basket__row">
+      <h2 class="title basket__title">Cart</h2>
+      <div class="basket__close"><img src="../images/closeBasket.svg" alt="closeBasket"></div>
+   </div>
+   <div class="line basket__line"></div>
+   <div class="basket__content">
+      
+
+   </div>
+   <h3 class="text basket__not-product">Your cart is empty</h3>
+   <div class="basket__check">
+      <button class="button basket__price-btn"></button>
+   </div>
+
+
+
+</div>
       <main class="page">
          <section class="order page-order">
             <div class="order__container">
-
-
                <form class="order__form">
                   <h1 class="title order__title">Delivery Information</h1>
                   <div class="order__form-row">
                      <div class="mw order__form-mane">
-                        <label class="order__form-label text">First Name</label>
+                        <label class="text order__form-label">First Name</label>
                         <input class="inp order__form-inp name" type="text">
                         <span class="order__form-error name-error"></span>
                      </div>
 
                      <div class="mw order__form-last-mane">
-                        <label class="order__form-label text">Last Name</label>
+                        <label class="text order__form-label">Last Name</label>
                         <input class="inp order__form-inp last-name" type="text">
                         <span class="order__form-error last-name-error"></span>
                      </div>
@@ -110,12 +127,12 @@
 
                   <div class="order__form-row">
                      <div class="mw order__form-address">
-                        <label class="order__form-label text">Address Line 1</label>
+                        <label class="text order__form-label">Address Line 1</label>
                         <input class="inp order__form-inp address" type="text" data-index="0">
                         <span class="order__form-error address-error"></span>
                      </div>
                      <div class="mw order__form-add-address">
-                        <label class="order__form-label text">Address Line 2</label>
+                        <label class="text order__form-label">Address Line 2</label>
                         <input class="inp order__form-inp address" type="text" data-index="1">
                         <span class="order__form-error address-error"></span>
                      </div>
@@ -123,13 +140,13 @@
 
                   <div class="order__form-row">
                      <div class="mw order__form-city">
-                        <label class="order__form-label text">City</label>
+                        <label class="text order__form-label">City</label>
                         <input class="inp order__form-inp city" type="text">
                         <span class="order__form-error city-error"></span>
                      </div>
                      <div class="mw order__form-add-row">
                         <div class="order__form-state">
-                           <label class="order__form-label text">State / Province</label>
+                           <label class="text order__form-label">State / Province</label>
                            <div class="order__form-select">
                               <span class="order__form-current">NY</span>
                               <div class="order__form-arrow">
@@ -148,7 +165,7 @@
                         </div>
 
                         <div class="order__form-code">
-                           <label class="order__form-label text">ZIP / Postal Code</label>
+                           <label class="text order__form-label">ZIP / Postal Code</label>
                            <input class="inp order__form-inp code" type="text">
                            <span class="order__form-error code-error"></span>
                         </div>
@@ -159,12 +176,12 @@
 
                   <div class="order__form-row">
                      <div class="mw order__form-email">
-                        <label class="order__form-label text">Email</label>
+                        <label class="text order__form-label">Email</label>
                         <input class="inp order__form-inp email" type="emai">
                         <span class="order__form-error email-error"></span>
                      </div>
                      <div class="mw order__form-number">
-                        <label class="order__form-label text">Phone Number</label>
+                        <label class="text order__form-label">Phone Number</label>
                         <input class="inp order__form-inp phone" type="text">
                         <span class="order__form-error phone-error"></span>
                      </div>
@@ -174,18 +191,18 @@
 
                   <div class="order__card">
                      <div class="mw order__card-number">
-                        <label class="order__form-label text">Card Number</label>
+                        <label class="text order__form-label">Card Number</label>
                         <input class="inp order__card-inp card" type="text" placeholder="XXXX XXXX XXXX XXXX">
                         <span class="order__form-error card-error"></span>
                      </div>
                      <div class="mw order__card-item">
                         <div class="order__card-data">
-                           <label class="order__form-label text">Expiration</label>
+                           <label class="text order__form-label">Expiration</label>
                            <input class="inp order__card-inp data" type="text" placeholder="MM/YY">
                            <span class="order__form-error data-error"></span>
                         </div>
                         <div class="order__card-cvc">
-                           <label class="order__form-label text">CVC</label>
+                           <label class="text order__form-label">CVC</label>
                            <input class="inp order__card-inp cvc" type="password" placeholder="CVC">
                            <span class="order__form-error cvc-error"></span>
                         </div>
@@ -193,7 +210,26 @@
                   </div>
                </form>
                <div class="order__basket">
-
+                  <div class="order__content">
+                     <div class="order__product">
+                     </div>
+                     <div class="order__product-subitem">
+                        <hr class="line order__product-line">
+                        <div class="order__product-subtotal">
+                           <p class="text order__product-subtotal-text">Subtotal</p>
+                           <p class="text order__product-subtotal-price">${product.price}</p>
+                        </div>
+                        <div class="order__product-shipping">
+                           <p class="text order__product-shipping-text">Shipping</p>
+                           <p class="text order__product-shipping-price">${product.price}</p>
+                        </div>
+                        <div class="order__product-total">
+                           <p class="text order__product-total-text">Today’s Total:</p>
+                           <p class="text order__product-total-price">${product.price}</p>
+                        </div>
+                        <button class="button order__product-btn">Place order</button>
+                     </div>
+                  </div>
                </div>
 
             </div>
@@ -221,8 +257,8 @@
    </div>
 
 
-
-   <script src="js/order.min.js?_v=20230927014458"></script>
+   <script src="js/card.min.js?_v=20230928173832"></script>
+   <script src="js/order.min.js?_v=20230928173832"></script>
 </body>
 
 </html>
