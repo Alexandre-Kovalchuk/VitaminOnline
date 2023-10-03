@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/card.min.css?_v=20230930001047">
+	<link rel="stylesheet" href="css/card.min.css">
 	<title>Product card</title>
 </head>
 
@@ -95,12 +95,22 @@
    </div>
    <div class="line basket__line"></div>
    <div class="basket__content">
-      
+
+
+
+   </div>
+   <div class="basket__item">
+      <div class="basket__item-block">
+         <div class="basket__item-img">
+            <img src="images/basketUnion.svg" alt="icon">
+         </div>
+         <div class="text basket__item-text">Your cart is empty</div>
+      </div>
 
    </div>
    <h3 class="text basket__not-product">Your cart is empty</h3>
    <div class="basket__check">
-      <button class="button basket__price-btn"></button>
+      <button class="button basket__price-btn">Check Out<span>•</span>$<span class="all-price"></span></button>
    </div>
 
 
@@ -145,15 +155,15 @@
                            <div class="info__param-item">
                               <p class="text info__sub-subtext chenge-text">Autoship this item every</p>
                               <p class="text info__sub-subtext chenge-text">Deliver every</p>
-                              <div class="info__select">
-                                 <div class="text info__current">30</div>
-                                 <div class="info__arrow">
+                              <div class="info__select selected">
+                                 <div class="text current info__current">30</div>
+                                 <div class="arrow info__arrow">
                                     <img src="images/down-arrow.svg" alt="arrow">
                                  </div>
-                                 <ul class="info__list">
-                                    <li class="text info__list-item">10</li>
-                                    <li class="text info__list-item">20</li>
-                                    <li class="text info__list-item">30</li>
+                                 <ul class="info__list list">
+                                    <li class="text info__list-item item">10</li>
+                                    <li class="text info__list-item item">20</li>
+                                    <li class="text info__list-item item">30</li>
                                  </ul>
                               </div>
                               <p class="text info__sub-subtext">days</p>
@@ -166,11 +176,11 @@
                         <hr class="line info__line">
                         <div class="info__param-sub-row">
                            <div class="info__param-block">
-                              
-                              
-                              
+                              <!-- <p class="info__price-old text"></p> -->
+                              <!-- <p class="info__price text" id="price"></p> -->
+                              <!-- <p class="info__label text"></p> -->
                            </div>
-                           
+                           <!-- <button class="info__add-btn button ">Add to cart</button> -->
                         </div>
                      </div>
                      <div class="info-about__product">
@@ -245,8 +255,8 @@
    </div>
 </footer>
    </div>
-   <script src="js/basket.min.js?_v=20230930001047"></script>
-   <script src="js/card.min.js?_v=20230930001047"></script>
+   <script src="js/basket.min.js"></script>
+   <script src="js/card.min.js"></script>
 </body>
 
 </html>

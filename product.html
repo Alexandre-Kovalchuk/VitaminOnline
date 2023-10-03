@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/product.min.css?_v=20230930001047">
+	<link rel="stylesheet" href="css/product.min.css">
 	<title>Product</title>
 </head>
 
@@ -95,12 +95,22 @@
    </div>
    <div class="line basket__line"></div>
    <div class="basket__content">
-      
+
+
+
+   </div>
+   <div class="basket__item">
+      <div class="basket__item-block">
+         <div class="basket__item-img">
+            <img src="images/basketUnion.svg" alt="icon">
+         </div>
+         <div class="text basket__item-text">Your cart is empty</div>
+      </div>
 
    </div>
    <h3 class="text basket__not-product">Your cart is empty</h3>
    <div class="basket__check">
-      <button class="button basket__price-btn"></button>
+      <button class="button basket__price-btn">Check Out<span>•</span>$<span class="all-price"></span></button>
    </div>
 
 
@@ -125,12 +135,12 @@
                            <div class="product__item-img">
                               <picture class="product__item-top-banner">
                                  <source media="(max-width: 375px)" srcset="images/product/bannerProdMobile2.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="images/product/bannerProd2.webp"> -->
                                  <img src="images/product/bannerProd2.png" alt="Vitamins" title="Vitamins">
                               </picture>
                               <picture class="product__item-union union">
                                  <source media="(max-width: 767.98px)" srcset="images/product/bannerIntersectMobile2.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="mages/product/bannerIntersect2.webp"> -->
                                  <img src="images/product/bannerIntersect2.png" alt="Vitamins" title="Vitamins">
                               </picture>
                            </div>
@@ -161,12 +171,12 @@
                            <div class="product__item-img">
                               <picture class="product__item-banner">
                                  <source media="(max-width: 375px)" srcset="images/product/bannerProdMobile1.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="images/product/bannerProd1.webp"> -->
                                  <img src="images/product/bannerProd1.png" alt="Vitamins" title="Vitamins">
                               </picture>
                               <picture class="product__item-union">
                                  <source media="(max-width: 767.98px)" srcset="images/product/bannerIntersectMobile1.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="mages/product/bannerIntersect1.webp"> -->
                                  <img src="images/product/bannerIntersect1.png" alt="Vitamins" title="Vitamins">
                               </picture>
                            </div>
@@ -189,12 +199,12 @@
                            <div class="product__item-img">
                               <picture class="product__item-sub-banner">
                                  <source media="(max-width: 375px)" srcset="images/product/bannerProdMobile3.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="images/product/bannerProd2.webp"> -->
                                  <img src="images/product/bannerProd3.png" alt="Vitamins" title="Vitamins">
                               </picture>
                               <picture class="product__item-union union">
                                  <source media="(max-width: 767.98px)" srcset="images/product/bannerIntersectMobile3.png">
-                                 
+                                 <!-- <source type="image/webp" srcset="mages/product/bannerIntersect2.webp"> -->
                                  <img src="images/product/bannerIntersect3.png" alt="Vitamins" title="Vitamins">
                               </picture>
                            </div>
@@ -276,6 +286,14 @@
                <article class="card__catalog catalog">
                   <div class="catalog__content">
                   </div>
+                  <div class="catalog__btn">
+                     <button class="button catalog__btn-more">View more 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.46376L11.5433 4.49102e-07L6.5 5.07249L1.45672 -6.36751e-08L-2.85708e-07 1.46376L6.5 8L13 1.46376Z" fill="#FF7D4E"/>
+                         </svg>
+                     </button>
+                  </div>
+                  
                </article>
             </div>
          </section>
@@ -294,12 +312,12 @@
                   <div class="banner__item-img">
                      <picture class="banner__item-sub-banner">
                         <source media="(max-width: 375px)" srcset="images/product/bannerProdMobile3.png">
-                        
+                        <!-- <source type="image/webp" srcset="images/product/bannerProd2.webp"> -->
                         <img src="images/product/bannerProd3.png" alt="Vitamins" title="Vitamins">
                      </picture>
                      <picture class="union banner__item-union">
                         <source media="(max-width: 767.98px)" srcset="images/product/bannerIntersectMobile3.png">
-                        
+                        <!-- <source type="image/webp" srcset="mages/product/bannerIntersect2.webp"> -->
                         <img src="images/product/bannerIntersect3.png" alt="Vitamins" title="Vitamins">
                      </picture>
                   </div>
@@ -411,7 +429,8 @@
    </div>
 </footer>
    </div>
-   <script src="js/product.min.js?_v=20230930001047"></script>
+   <script src="js/basket.min.js"></script>
+   <script src="js/product.min.js"></script>
 </body>
 
 </html>

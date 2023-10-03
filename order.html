@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="Витамин Онлайн - широкий вибір біологічних добавок.">
-	<link rel="stylesheet" href="css/order.min.css?_v=20230930001047">
+	<link rel="stylesheet" href="css/order.min.css">
 	<title>Orders</title>
 </head>
 
@@ -95,12 +95,22 @@
    </div>
    <div class="line basket__line"></div>
    <div class="basket__content">
-      
+
+
+
+   </div>
+   <div class="basket__item">
+      <div class="basket__item-block">
+         <div class="basket__item-img">
+            <img src="images/basketUnion.svg" alt="icon">
+         </div>
+         <div class="text basket__item-text">Your cart is empty</div>
+      </div>
 
    </div>
    <h3 class="text basket__not-product">Your cart is empty</h3>
    <div class="basket__check">
-      <button class="button basket__price-btn"></button>
+      <button class="button basket__price-btn">Check Out<span>•</span>$<span class="all-price"></span></button>
    </div>
 
 
@@ -210,22 +220,31 @@
                   </div>
                </form>
                <div class="order__basket">
-                  <div class="order__content">
+                  <div class="order__product-total-top">
+                     <div class="order__product-total-item">
+                        <img src="images/basket.svg" alt="basket">
+                        <p class="text order__product-total-text">Today’s Total:</p>
+                       <img class="order__arrow" src="images/Back_arrow44.svg" alt="arrow"> 
+                     </div>
+                     <p class="text order__product-total-price">$ 0.00</p>
+                  </div>
+                  <div class="hide order__content">
                      <div class="order__product">
+                        
                      </div>
                      <div class="order__product-subitem">
                         <hr class="line order__product-line">
                         <div class="order__product-subtotal">
                            <p class="text order__product-subtotal-text">Subtotal</p>
-                           <p class="text order__product-subtotal-price">${product.price}</p>
+                           <p class="text order__product-subtotal-price">$ 0.00</p>
                         </div>
                         <div class="order__product-shipping">
                            <p class="text order__product-shipping-text">Shipping</p>
-                           <p class="text order__product-shipping-price">${product.price}</p>
+                           <p class="text order__product-shipping-price">$ 0.00</p>
                         </div>
                         <div class="order__product-total">
                            <p class="text order__product-total-text">Today’s Total:</p>
-                           <p class="text order__product-total-price">${product.price}</p>
+                           <p class="text order__product-total-price">$ 0.00</p>
                         </div>
                         <button class="button order__product-btn">Place order</button>
                      </div>
@@ -256,9 +275,8 @@
       </footer>
    </div>
 
-
-   <script src="js/card.min.js?_v=20230930001047"></script>
-   <script src="js/order.min.js?_v=20230930001047"></script>
+   <script src="js/basket.min.js"></script>
+   <script src="js/order.min.js"></script>
 </body>
 
 </html>
